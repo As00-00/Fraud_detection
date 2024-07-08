@@ -49,5 +49,29 @@ Classifiers trained on the dataset were -->
   3. Support Vector Machines(SVM)
   4. Decision Trees
 
+In each of these techniques, rigorous analysis was done by plotting roc curves, learning rate curves , precision-recall curves and a detailed classification report.
+
+# Model Evaluation
+The above classifiers were evaluated based on how they performed on the test dataset.
+
+Initially, the classifier was trained on a balanced training data set which was generated through undersampling by which best model parameters were chosen through GridSearch and Cross Validation technique
+
+Then Receiver Operating characteristic(ROC) curve was plotted to check the model's performance and how much the model is overfitting the data.
+
+Learning curve was plotted to visualise how model is being trained as more data has been added and to understand its biasing nature.
+
+As a baseline , various metrics -->
+  1. accuracy score
+  2. precision score
+  3. recall score
+  4. ROC AUC score
+  5. PR AUC score
+  6. F1 score
+were calculated with balanced training set and compared with imbalanced trainings set.
+
+Finally, precision recall curve, confusion matrix and classification report was calculated on imbalanced testing dataset to fully understand the model's performance.
+
+# Results and Discussion
+
 
 
