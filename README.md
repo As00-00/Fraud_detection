@@ -9,7 +9,7 @@ The dataset to be analysed is a highly imbalanced data,for obvious reasons(Since
 
 Dataset-->https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
-The data consists of around quater a million observations i.e #transactions in the span of 2 days in September 2013 by European cardholders. Out  of which only 492 fraudulent transactions were recorded as per the data i.e only 0.17% (highly skewed data).
+The data consists of around quarter a million observations i.e #transactions in the span of 2 days in September 2013 by European cardholders. Out  of which only 492 fraudulent transactions were recorded as per the data i.e only 0.17% (highly skewed data).
 
 On record, there were plenty of original features of a particular transaction which included clients personal information, therefore for privacy purposes the data provided only had 31 features which were created by dimentionality reduction(PCA).
 
