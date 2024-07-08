@@ -117,7 +117,7 @@ you can install the above by using the command
 # Directory Structure
 CreditCard.ipynb -->Full code snippet with explanation
 
-CreditCard_dataset.csv --> Dataset
+CreditCard_data.csv --> Dataset
 
 LICENSE --> 'project licensed under MIT license'
 
