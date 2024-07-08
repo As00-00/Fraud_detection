@@ -67,11 +67,61 @@ As a baseline , various metrics -->
   4. ROC AUC score
   5. PR AUC score
   6. F1 score
+
 were calculated with balanced training set and compared with imbalanced trainings set.
 
 Finally, precision recall curve, confusion matrix and classification report was calculated on imbalanced testing dataset to fully understand the model's performance.
 
 # Results and Discussion
+It was seen that the dataset was highly imbalanced, it was necessary to examine and handle it carefully , which was done by undersampling technique.
 
+All models tend to overfit the balanced dataset specially KNN and DTrees.
 
+At the time of testing , it was seen that precision score was extremely less while recall score was really high. This suggests that model tend to identify most of the fraud cases which is a good sign, but it also falsely determine most of the non-fraud cases i.e it misclassified non-fraudulent transactions as fraudulent.
+
+Although, it depends on company to company how to deal with it, usually identifing all the fraudulent cases is more of a priority than checking the non-fraud cases. But looking at the other side of the picture if non-frauds were classsified as frauds, users might stop transactioning through the company's card which would also degrade company's reputation.
+
+Looking at both the outcomes, classifier's training conditions could be set based on what an organisation wants, example,high average precision,high recall,huigh precision, high ROC AUC,etc.
+
+I have analysed the data through (neg_log_loss) scoring analysis on model, which generated different results, if you want a higher recall or higher precision in models prediction, you can set it accordingly.
+
+# Conclusion
+The project was successfully able to detect most of the fraudulent transactions which was unseen to the model and hopes to detect on more unseen data accurately as well.
+
+This can be used by any government organisation or any private firm to keep in check how transactions are made and how cyber threats can be prevented.
+
+# Dependencies and Installations
+
+Following dependencies should be installed in your local machine -->
+
+-Python 3.x
+
+-Jupyter Notebook/Google Colab(Alternative)
+
+-Numpy
+
+-Pandas
+
+-Matplotlib
+
+-Seaborn
+
+-sklearn
+
+-imblearn
+
+you can install the above by using the command
+
+--> pip install (module)
+
+# Directory Structure
+CreditCard.ipynb -->Full code snippet with explanation
+
+CreditCard_dataset.csv --> Dataset
+
+LICENSE --> 'project licensed under MIT license'
+
+# Contact Information
+You can contact at -->
+Email --> sankhlaaryan10@gmail.com
 
